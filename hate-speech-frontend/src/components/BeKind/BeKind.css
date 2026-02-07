@@ -1,0 +1,47 @@
+.bekind {
+	max-width: 720px;
+	margin: 0 auto;
+	padding: 32px 24px;
+}
+
+.bekind-title {
+	margin: 0 0 28px;
+	font-size: 28px;
+	font-weight: 700;
+	color: #1a1a1a;
+	text-align: center;
+}
+
+.bekind-content {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.bekind-content p {
+	margin: 0;
+	font-size: 16px;
+	line-height: 1.65;
+	color: #444;
+}
+
+.bekind-tagline {
+	font-weight: 600;
+	color: #1a1a1a;
+	font-size: 17px;
+	margin-top: 12px;
+}
+
+@media (max-width: 640px) {
+	.bekind {
+		padding: 24px 16px;
+	}
+
+	.bekind-title {
+		font-size: 24px;
+	}
+
+	.bekind-content p {
+		font-size: 15px;
+	}
+}

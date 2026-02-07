@@ -1,0 +1,47 @@
+.our-objectives {
+	max-width: 720px;
+	margin: 0 auto;
+	padding: 32px 24px;
+}
+
+.our-objectives-title {
+	margin: 0 0 28px;
+	font-size: 28px;
+	font-weight: 700;
+	color: #1a1a1a;
+	text-align: center;
+}
+
+.our-objectives-content {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.our-objectives-list {
+	margin: 0;
+	padding-left: 24px;
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+}
+
+.our-objectives-list li {
+	font-size: 16px;
+	line-height: 1.65;
+	color: #444;
+}
+
+@media (max-width: 640px) {
+	.our-objectives {
+		padding: 24px 16px;
+	}
+
+	.our-objectives-title {
+		font-size: 24px;
+	}
+
+	.our-objectives-list li {
+		font-size: 15px;
+	}
+}
