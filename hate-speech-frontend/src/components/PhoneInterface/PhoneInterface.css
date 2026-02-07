@@ -338,11 +338,17 @@
 	overflow: hidden;
 }
 
-.app-icon img {
+.app-icon img,
+.app-tile.app-a .app-icon img {
 	width: 60%;
 	height: 60%;
 	object-fit: contain;
 	filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.25));
+}
+
+.safe-talk-logo {
+	width: 72%;
+	height: 72%;
 }
 
 .app-label {

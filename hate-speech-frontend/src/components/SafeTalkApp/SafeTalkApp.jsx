@@ -95,7 +95,10 @@ const SafeTalkApp = ({ onBack, onAvatarCreated, initialTab, onInitialTabConsumed
 				<button className="back-btn" onClick={onBack}>
 					← Back
 				</button>
-				<h1>Safe Talk</h1>
+				<div className="safetalk-header-brand">
+					<img src={process.env.PUBLIC_URL + "/bee.jpeg"} alt="" className="safetalk-logo" aria-hidden />
+					<h1>Safe Talk</h1>
+				</div>
 				<div />
 			</header>
 

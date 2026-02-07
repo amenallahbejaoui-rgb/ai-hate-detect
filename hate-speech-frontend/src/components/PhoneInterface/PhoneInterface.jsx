@@ -3,7 +3,6 @@ import "./PhoneInterface.css";
 import NotificationMessage from "../NotificationMessage/NotificationMessage";
 import InstagramConversation from "../InstagramConversation/InstagramConversation";
 import { AvatarPreviewCanvas } from "../SafeTalkApp/AvatarPreview";
-import safeIcon from "./icons/safe.svg";
 import chatIcon from "./icons/chat.svg";
 import reportsIcon from "./icons/reports.svg";
 import settingsIcon from "./icons/settings.svg";
@@ -15,6 +14,8 @@ import phoneIcon from "./icons/phone.svg";
 import messagesIcon from "./icons/messages.svg";
 import browserIcon from "./icons/browser.svg";
 import musicIcon from "./icons/music.svg";
+
+const SAFE_TALK_LOGO = process.env.PUBLIC_URL + "/bee.jpeg";
 
 const PhoneInterface = ({ onSafeTalkClick, onNavigateToCommunity, userAvatar }) => {
 	const [conversation, setConversation] = useState(null);
@@ -112,7 +113,7 @@ const PhoneInterface = ({ onSafeTalkClick, onNavigateToCommunity, userAvatar }) 
 									onClick={handleSafeTalkClick}
 								>
 									<span className="app-icon">
-										<img src={safeIcon} alt="Safe Talk" />
+										<img className="safe-talk-logo" src={SAFE_TALK_LOGO} alt="Safe Talk" />
 									</span>
 									<span className="app-label">Safe Talk</span>
 								</button>
